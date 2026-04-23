@@ -1,0 +1,10 @@
+[package]
+name = "pcap"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+etherparse = "0.20.1"
+pcap-parser = "0.17.0"
+polars = "0.53.0"
+separator = "0.4.1"
