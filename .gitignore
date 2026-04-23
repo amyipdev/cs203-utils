@@ -207,7 +207,7 @@ marimo/_lsp/
 __marimo__/
 
 # Rust
-cargo.lock
+Cargo.lock
 target/
 
 # Pcap Dataset
