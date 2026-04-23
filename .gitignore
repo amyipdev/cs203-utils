@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Rust
+cargo.lock
+target/
+
+# Pcap Dataset
+data/
+Anonymized_bras_dataset/
+Anonymized_onu_dataset/
+Anonymized_bras_dataset.rar
+Anonymized_onu_dataset.rar
+Bras_features.csv
+Onu_features.csv
+data.zip
+
+# Pcap Output
+bras.bin
+onu.bin
