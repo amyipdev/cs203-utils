@@ -3,7 +3,7 @@ All data was taken from this [link](https://springernature.figshare.com/articles
 
 ## Steps
 1. Download the zip file on the linked website.
-2. Unzip the file into a data directory.
+2. Unzip the file into a directory named `data/`.
 3. Execute `cargo run` from the pcap directory.
 
 The resulting `bras.bin` and `onu.bin` files will follow the convention of a 4 byte integer specifying the number of bytes in the payload, followed by the bytes of the payload.
