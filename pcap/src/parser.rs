@@ -22,11 +22,9 @@ fn parse_packet(packet: &[u8]) -> Option<Vec<u8>> {
         }
         Ok(value) => {
             let v = match value.transport {
-                Some(TransportSlice::Icmpv4(s)) => s.payload(),
-                Some(TransportSlice::Icmpv6(s)) => s.payload(),
                 Some(TransportSlice::Udp(s)) => s.payload(),
                 Some(TransportSlice::Tcp(s)) => s.payload(),
-                None => return None,
+                _ => return None,
             };
             if v.is_empty() {
                 return None;
